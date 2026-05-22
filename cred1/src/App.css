@@ -8,7 +8,7 @@
 .top{
    display:flex;
   flex-direction:column;
-  gap:20px;
+  gap:10px;
 }
 .top h1{
   color: rgb(241, 239, 232);
@@ -17,7 +17,7 @@
   font-family:Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   line-height:0.9;
-  
+  margin-top: -10%;
 }
 .top p{
   color: aliceblue;
@@ -329,4 +329,17 @@ margin-left:20%;
   color: rgb(123, 124, 124);
  margin-left: 70%;
   margin-top:-1.5%;
+}
+
+.rating{
+  background-color: aliceblue;
+  margin-left:60%;
+  margin-top:-30%;
+}
+
+.top img{
+  width:240px;
+  height:200px;
+  margin-right: 80%;
+  margin-top:-20%;
 }

@@ -1,7 +1,8 @@
-
+import CredCards from "./CredCards";
 import cred from "./assets/cred.mp4"
 import cr2 from "./assets/cr2.mp4"
-
+import Rating from "./Rating";
+import logo from "./assets/logo.png"
 import img1 from "./assets/mobile.png"
 import './App.css'
 
@@ -11,8 +12,10 @@ function App() {
    
   return (
     <>
+    
 
      <div class="top">
+      <img src={logo}/>
      <video autoPlay muted loop className="credbg">
       <source src={cred} type="video/mp4" />
      </video>
@@ -55,6 +58,7 @@ function App() {
     <h1>upgrade your life.
       <br/>
       bit by bit.</h1>
+      <CredCards />
   </div>
 
   <div class="box4">
@@ -87,6 +91,9 @@ function App() {
       the proof <br/>
       writes itself
     </h1>
+    <div class="rating">
+    <Rating />
+    </div>
     <br/>
     <hr/>
   </div>

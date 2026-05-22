@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cards-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 40px;
+  background: #000;
+}
+
+.cards-wrapper {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+}
+
+.card {
+  position: relative;
+  width: 380px;
+  height: 520px;
+  border: 1px solid #222;
+  overflow: hidden;
+  background: #000;
+  flex-shrink: 0;
+}
+
+.card-content {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  z-index: 10;
+}
+
+.card-tag {
+  color: #9ca3af;
+  letter-spacing: 4px;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.card-title {
+  color: white;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.1;
+  white-space: pre-line;
+}
+
+.card-btn {
+  margin-top: 32px;
+  padding: 16px 32px;
+  border: 1px solid #666;
+  background: transparent;
+  color: white;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-btn:hover {
+  background: white;
+  color: black;
+}
+
+.card-glow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  filter: blur(80px);
+}
+
+.pink-glow {
+  background: rgba(255, 0, 128, 0.5);
+}
+
+.purple-glow {
+  background: rgba(174, 0, 255, 0.5);
+}
+
+.green-glow {
+  background: rgba(0, 255, 140, 0.5);
+}
+
+.card-image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  object-fit: contain;
+}
